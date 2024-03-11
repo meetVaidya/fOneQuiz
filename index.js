@@ -141,7 +141,7 @@ async function question6() {
         choices: ['Red Bull Racing', 'McLaren', 'Mercedes', 'Ferrari'],
     });
 
-    return handleAnswer(answers.question_6 === 'Valtteri Bottas');
+    return handleAnswer(answers.question_6 === 'Mercedes');
 }
 
 async function question7() {
@@ -160,16 +160,16 @@ async function question8() {
         name: 'question_8',
         type: 'list',
         message:
-            'Pick a driver who achieved multiple podium finishes without ever winning a race',
+            'Which is the $1 constructor in F1 history to win championship',
         choices: [
-            'Valtteri Bottas',
-            'Sergio Perez',
-            'Daniel Ricciardo',
-            'Michael Schumacher',
+            'Tyrell Racing',
+            'Brawn GP',
+            'Force India',
+            'Jordan Grand Prix',
         ],
     });
 
-    return handleAnswer(answers.question_8 === 'Valtteri Bottas');
+    return handleAnswer(answers.question_8 === 'Brawn GP');
 }
 
 async function question9() {
